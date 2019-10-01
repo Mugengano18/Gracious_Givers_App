@@ -2,11 +2,9 @@
 <html>
 <head>
     <title>{{#block "title"}}Gracious Givers{{/block}}</title>
-{{!--     Choose one cdn--}}
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='css/app.css' />
 
-    <link rel='stylesheet' href='app.css' />
 </head>
 <body>
 <main>
@@ -14,36 +12,36 @@
 <div class="container">
     <section>
         <div class="nav">
-           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-             <a class="navbar-brand" href="#">Gracious Givers</a>
-             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-             </button>
+           <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                 <a class="navbar-brand" href="#">Gracious Givers</a>
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+                 </button>
 
-             <div class="collapse navbar-collapse" id="navbarColor02">
-               <ul class="navbar-nav mr-auto">
-                 <li class="nav-item active">
-                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link" href="#">About us</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link" href="#">Volunteer</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link" href="#">Donating areas</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link" href="#">Donate</a>
-                 </li>
-               </ul>
-               <form class="form-inline my-2 my-lg-0">
-                 <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                 <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-               </form>
-             </div>
-           </nav>
+                 <div class="collapse navbar-collapse" id="navbarColor03">
+                   <ul class="navbar-nav mr-auto" style="text-align:center">
+                     <li class="nav-item active">
+                       <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="#">About us</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="#">Volunteer</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="#">Donating areas</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="#">Donate</a>
+                     </li>
+                   </ul>
+                   <form class="form-inline my-2 my-lg-0">
+                     <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                     <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                   </form>
+                 </div>
+               </nav>
         </div>
 
     </section>
@@ -55,9 +53,55 @@
 </div>
 <!--end main template-->
 {{#block "footer"}}
-    <div class="footer">
+      <div class="footer">
 
-    </div>
+          <div class="container">
+            <section style="height:60px;"></section>
+          <div class="row" style="text-align:center;">
+          </div>
+{{!--             ---------- Footer ------------ --}}
+            <footer class="footer-bs">
+                <div class="row">
+                  <div class="col-md-3 footer-brand animated fadeInLeft">
+                      <h2>Gracious Givers logo</h2>
+                        <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies.
+                           Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+                        <p>© 2019, All rights reserved</p>
+                    </div>
+                  <div class="col-md-4 footer-nav animated fadeInUp">
+                      <h4>Menu —</h4>
+                      <div class="col-md-6">
+                            <ul class="list">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Volunteer</a></li>
+                                <li><a href="#">Donating areas</a></li>
+                                <li><a href="#">Donate</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                  <div class="col-md-2 footer-social animated fadeInDown">
+                      <h4>Follow Us</h4>
+                      <ul>
+                          <li><a href="#"><img src="images/facebook.png">Facebook</a></li>
+                          <li><a href="#"><img src="images/twitter.png">Twitter</a></li>
+                          <li><a href="#"><img src="images/insta.png">Instagram</a></li>
+                        </ul>
+                    </div>
+                  <div class="col-md-3 footer-ns animated fadeInRight">
+                      <h4>CONTACT US</h4>
+                        <p>Feel free to reach out to us.</p>
+                        <p>
+                            <label>graciousgivers@gmail.com</label><br>
+                            <label>+250 788 063 78</label>
+                         </p>
+                    </div>
+                </div>
+            </footer>
+
+          </div>
+
+        </div>
     </main>
     </body>
     </html>
