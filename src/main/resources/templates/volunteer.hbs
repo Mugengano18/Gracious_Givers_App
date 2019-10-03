@@ -1,0 +1,138 @@
+{{#partial "content"}}
+<!--    <img src="https://www.standrewshospice.com/media/1131/banner-volunteers.jpg?anchor=center&mode=crop&width=850&height=320&rnd=131078749160000000">-->
+
+<div class="container1">
+<form action="/volunteer1/new" method="post">
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+                <h1 id="volunteer1">Volunteer with us</h1>
+                <input type="text" class="field" placeholder="Your Name" name="name">
+                <input type="email" class="field" placeholder="Your Email" name="email">
+                <input type="text" class="field" placeholder="Your Phone" name="phone">
+                <textarea class="field area" placeholder="Suggest Something to help us improve" name="message"></textarea>
+                <button type="submit" class="btn1">Send</button>
+            </div>
+        </div>
+        </form>
+    </div>
+{{/partial}}
+{{>layout1.hbs}}
+<style>
+ *{
+   padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+<!--     font-family: 'Quicksand', sans-serif;-->
+ }
+ .container1{
+     position:relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+     padding: 20px 100px;
+     font-family: 'Quicksand', sans-serif;
+ }
+ .container1:after{
+     content:"";
+     position: absolute;
+     left:0;
+      top: 0;
+     width:100%;
+     height:650px;
+          background:url(https://s3-eu-west-1.amazonaws.com/wbm.thumbnail/dissolve/1200/703860.jpg) no-repeat center ;
+     background-size: cover;
+     z-index: -1;
+    filter: blur(10px)
+ }
+.contact-box{
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px  rgba(0,0,0,0.19);
+    margin-top: 80px;
+}
+
+.left{
+    height: 100px;
+    background: url(https://s3-eu-west-1.amazonaws.com/wbm.thumbnail/dissolve/1200/703860.jpg) no-repeat center;
+    background-size: cover;
+    height: 550px;
+}
+.right{
+    padding:25px 40px
+}
+#volunteer1{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+volunteer1:after{
+    content: "";
+    position: absolute;
+    left:50px;
+    bottom: 0;
+    transform: translate(110px);
+    height: 4px;
+    width:50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+.field{
+    width:100%;
+    padding:0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0,0,0,0);
+    background-color:rgba(230,230,230,0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: 3s;
+
+}
+.field:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.field:focus{
+    background-color: #fff;
+    border:2px solid rgba(30,85,250,0.47);
+
+}
+.area{
+    min-height:150px;
+}
+.btn1{
+    width:100%;
+    padding:0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color:#2ecc71;
+    cursor: pointer;
+    outline:none;
+    border:none;
+    color:#fff;
+    transition:3s;
+}
+.btn1:hover{
+background-color:#27ae60;
+}
+
+.one{
+position:relative;
+left:300px;
+}
+
+@media screen and (max-width:800px){
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        height: 200px;
+    }
+}
+
+</style>
