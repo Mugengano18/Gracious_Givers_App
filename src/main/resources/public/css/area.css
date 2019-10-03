@@ -1,3 +1,4 @@
+
 img {
   height: 200px;
   width: 300px;
@@ -94,4 +95,17 @@ h5 {
   -ms-transform: scale(1);
   transform: scale(1);
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.body {
+  background-image: url("http://mvcweb.org/wp-content/uploads/2016/11/entregar-corazon.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-weight: bold;
+  color: white;
+
+}
+
+.main{
+  background-color: rgba(0, 0, 0, 0.7);
 }
