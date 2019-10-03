@@ -1,25 +1,25 @@
 /*Diane start*/
-img {
+.mr-3 {
   height: 200px;
   width: 300px;
 }
 
-h3 {
+ h3 {
   text-align: center;
   font-style: initial;
   font-weight: bold;
 }
 
-h1 {
+.main h1 {
   text-align: center;
   font-style: italic;
   text-transform: upperCase;
 }
-.row {
+.main .row {
   margin-left: 370px;
 }
 
-h5 {
+.main h5 {
   font-weight: bold;
 }
 
