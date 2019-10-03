@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{#block "title"}}Gracious Givers{{/block}}</title>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' />
+        <link rel='stylesheet' href='css/app.css' />
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <main>
+        <!-- start of navbar -->
+            <div>
+                <nav class="navbar navbar-light">
+                    <a class="navbar-brand" href="#">
+                        <img style="padding:0%; margin:0%;" src="/image/logo (1).png" width="50" height="40" alt="givers">
+                    </a>
+                    <ul style="background-color:white; color: black;" class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a id="nav" style="color: black;" class="nav-link" href="/"><strong>HOME</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="nav" style="color: black;" class="nav-link" href="#"><strong>ABOUT US</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="nav" style="color: black;" class="nav-link" href="#"><strong>VOLUNTEER</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="nav" style="color: black;" class="nav-link" href="#"><strong>DONATING AREAS</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="nav" style="color: black;" class="nav-link" href="#"><strong>DONATE</strong></a>
+                        </li>
+                    </ul>
+                    <a class="navbar-brand" href="#">
+                        <img style="padding:0%; margin:0%;" src="/image/logo (1).png" width="50" height="40" alt="givers">
+                    </a>
+                </nav>
+            </div>
+            <!-- end of navbar -->
+
+            <!--begin main template-->
+            <div class="container-fluid">
+                {{#block "content"}}
+
+                {{/block}}
+            </div>
+            <!--end main template-->
+            {{!--             ---------- Footer ------------ --}}
+            {{#block "footer"}}
+                <div style="background-color:rgb(208,208,208);" class="footer">
+                    <div class="container-fluid">
+                        <footer id="sticky-footer" class="footer-bs">
+                            <div style="margin-top:5%;" class="footer">
+                                <div class="foot1">
+                                    <img style="padding:0%; margin:0%;" src="/image/GraciousGivers (1).png" width="250" height="200" alt="givers">
+                                </div>
+                                <div class="foot2">
+                                    <h4>MENU:</h4>
+                                    <div class="list">
+                                        <a id="list" href="/">Home</a><br>
+                                        <a id="list" href="#">About Us</a><br>
+                                        <a id="list" href="#">Volunteer</a><br>
+                                        <a id="list" href="#">Donating areas</a><br>
+                                        <a id="list" href="#">Donate</a>
+                                    </div>
+                                </div>
+                                <div class="foot3">
+                                    <h4>CONTACT:</h4>
+                                    <h5>Feel free to reach out to us.</h5>
+                                    <p>
+                                        <label>Email: graciousgivers@gmail.com</label><br>
+                                        <label>Phone: +250 788 063 78</label>
+                                    </p>
+                                    <h5>Follow Us:</h5>
+                                    <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                                    <a href="https://twitter.com/login" target="_blank" class="fa fa-twitter"></a>
+                                    <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank" class="fa fa-instagram"></a>
+                                </div>
+                            </div>
+                            <div class="container text-center">
+                                <p>Gracious-Givers</p>
+                                <small>Copyright &copy; 2019, All rights reserved @ Gracious-Givers.</small>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+        </main>
+    </body>
+</html>
+{{/block}}
+<style>
+/* styling of navigation bar */
+#nav{
+  padding-top: 0%;
+  padding-left:15px;
+  padding-bottom: 0%;
+}
+#nav:hover{
+  border-bottom:1px solid gray;
+  text-decoration:none;
+}
+/*  End of navigation bar styling*/
+
+/* styling of footer */
+.fa {
+  padding:10px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 3%;
+  border-radius: 50%;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram{
+  background:red;
+  color:white;
+}
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#list{
+  color: black;
+}
+/*  end of footer styling  */
+</style>
