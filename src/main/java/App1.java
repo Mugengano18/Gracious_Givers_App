@@ -1,7 +1,7 @@
 import data.Sql2odonatorDao;
 import data.Sql2ovolunteerDao;
-import models.volunteer;
-import models.donator;
+import models.volunteer1;
+import models.donator1;
 import org.sql2o.Sql2o;
 import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;
@@ -33,7 +33,7 @@ public class App1 {
             String email=request.queryParams("email");
             String phone=request.queryParams("phone");
             String message=request.queryParams("message");
-            volunteer volunteer = new volunteer(name,email,phone,message);
+            models.volunteer1 volunteer = new volunteer1(name,email,phone,message);
             volunteer1.add(volunteer);
             return new ModelAndView(model, "voluntersuccess.hbs");
         }), new HandlebarsTemplateEngine());
@@ -51,7 +51,7 @@ public class App1 {
             String email=request.queryParams("email");
             String phone=request.queryParams("phone");
             String donations=request.queryParams("donations");
-            donator donate = new donator(name,email,phone,donations);
+            donator1 donate = new donator1(name,email,phone,donations);
             donation.add(donate);
             System.out.println(name);
             System.out.println(email);

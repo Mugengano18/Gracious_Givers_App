@@ -1,6 +1,6 @@
 package data;
 
-import models.volunteer;
+import models.volunteer1;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 import org.sql2o.Sql2oException;
@@ -13,15 +13,15 @@ public class Sql2ovolunteerDao implements  volunteerDao{
     }
 
     @Override
-    public void add(volunteer volunteer) {
+    public void add(volunteer1 volunteer1) {
         String query="INSERT INTO volunteer(name,email,phone,message,time) VALUES (:name,:email,:phone,:message,now())";
         try(Connection connect=sql2o.open()){
             int id=(int) connect.createQuery(query,true)
-                    .bind(volunteer)
+                    .bind(volunteer1)
                     .throwOnMappingFailure(false)
                     .executeUpdate()
                     .getKey();
-            volunteer.setId(id);
+            volunteer1.setId(id);
         }catch (Sql2oException except){
             System.out.println(except);
         }

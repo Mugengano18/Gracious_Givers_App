@@ -2,14 +2,14 @@ package models;
 
 import java.util.Objects;
 
-public class donator {
+public class donator1 {
     private String name;
     private String email;
     private String phone;
     private String donations;
     private int id;
 
-    public donator(String name, String email, String phone, String donations) {
+    public donator1(String name, String email, String phone, String donations) {
         this.name = name;
         this.email = email;
         this.phone = phone;
@@ -60,11 +60,11 @@ public class donator {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        donator donator = (donator) o;
-        return Objects.equals(name, donator.name) &&
-                Objects.equals(email, donator.email) &&
-                Objects.equals(phone, donator.phone) &&
-                Objects.equals(donations, donator.donations);
+        donator1 donator1 = (donator1) o;
+        return Objects.equals(name, donator1.name) &&
+                Objects.equals(email, donator1.email) &&
+                Objects.equals(phone, donator1.phone) &&
+                Objects.equals(donations, donator1.donations);
     }
 
     @Override

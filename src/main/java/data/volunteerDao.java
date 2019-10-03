@@ -1,8 +1,8 @@
 package data;
-import  models.volunteer;
+import models.volunteer1;
 public interface volunteerDao {
 
     //saving into the database
-   void add(volunteer volunteer);
+   void add(volunteer1 volunteer1);
 
 }

@@ -1,6 +1,6 @@
 package data;
 
-import models.donator;
+import models.donator1;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 import org.sql2o.Sql2oException;
@@ -15,7 +15,7 @@ public class Sql2odonatorDao implements donatorDao {
     }
 
     @Override
-    public void add(donator donate) {
+    public void add(donator1 donate) {
         String query="INSERT INTO donator(name,email,phone,donations,time) VALUES (:name,:email,:phone,:donations,now())";
         try(Connection connect=sql2o.open()){
             int id=(int) connect.createQuery(query,true)

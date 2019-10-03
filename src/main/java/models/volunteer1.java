@@ -2,7 +2,7 @@ package models;
 
 import java.util.Objects;
 
-public class volunteer {
+public class volunteer1 {
     private String name;
     private String email;
     private String phone;
@@ -10,7 +10,7 @@ public class volunteer {
     private int id;
 
 
-    public volunteer(String name, String email, String phone, String message) {
+    public volunteer1(String name, String email, String phone, String message) {
         this.name = name;
         this.email = email;
         this.phone = phone;
@@ -61,11 +61,11 @@ public class volunteer {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        volunteer volunteer = (volunteer) o;
-        return phone == volunteer.phone &&
-                Objects.equals(name, volunteer.name) &&
-                Objects.equals(email, volunteer.email) &&
-                Objects.equals(message, volunteer.message);
+        volunteer1 volunteer1 = (volunteer1) o;
+        return phone == volunteer1.phone &&
+                Objects.equals(name, volunteer1.name) &&
+                Objects.equals(email, volunteer1.email) &&
+                Objects.equals(message, volunteer1.message);
     }
 
     @Override
