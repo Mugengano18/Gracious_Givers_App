@@ -9,7 +9,7 @@ import spark.template.handlebars.HandlebarsTemplateEngine;
 import java.util.HashMap;
 import java.util.Map;
 import static spark.Spark.*;
-public class App {
+public class App1 {
     public static void main(String[] args){
         Sql2ovolunteerDao volunteer1;
         Sql2odonatorDao donation;
