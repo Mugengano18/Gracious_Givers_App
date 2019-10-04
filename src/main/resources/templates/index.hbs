@@ -1,0 +1,116 @@
+{{#partial "content"}}
+<div id="home">
+      <div class="row">
+        <div id="header" class="col-md-12">
+          <div class="transparent-dark">
+              <div class="header">
+                  <br><h1 id="h1">givers</h1>
+                  <div id="words">
+                    <p>Care For the needy,</p>
+                    <p>Protect their welfare.</p>
+                  </div>
+                  <br><p id="subtitle">A giving heart is a blessed heart.</p>
+                  <br><br><a href="/donate/new"><button style="font-family: 'Dancing Script', cursive; background-color: black;color: white;"><strong>donate & help</strong></button></a>
+                </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;" class="row">
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <img src="https://www.pngkey.com/png/detail/251-2514184_about-natures-way-medicine-medical-marijuana-symbol-hd.png" width="90" height="90">
+                <h5 style="padding-top: 3%;" class="card-title">MEDICAL CAMPS</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                  <img src="https://www.trzcacak.rs/myfile/full/141-1412274_charity-recommendations-charity-logo-png.png" width="90" height="90">
+                  <h5 style="padding-top: 3%;" class="card-title">CHARITY CAMPAIGNS</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+              <div class="card">
+                <div class="card-body">
+                    <img src="https://www.yugenexplore.com/layoutimages/yugen-logo-notext.png" width="120" height="90">
+                    <h5 style="padding-top: 3%;" class="card-title">VOLUNTEERING</h5>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{{/partial}}
+<style>
+.header{
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    font-size: 1.25em;
+
+}
+#header{
+  background-image: url("http://biblevisuals.org/wp-content/uploads/2016/03/FI-D%C3%A9z-Magn%C3%A9r-hands.jpg");
+<!--   background-image: url("https://images.pexels.com/photos/45842/clasped-hands-comfort-hands-people-45842.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); -->
+<!--   background-image: url("https://www.nicepng.com/png/full/63-635202_giving-hands-hand.png");-->
+  /* background-image: url("https://i.dlpng.com/static/png/94412_preview.png"); */
+  /* background-image: url("https://www.tokkoro.com/picsup/2082918-female-hands-giving-red-heart-vintage-tone.jpg"); */
+/*   background-image: url("https://cdn.pixabay.com/photo/2015/03/30/20/33/heart-700141_960_720.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  width: 100%;
+  position:relative;
+  z-index:1;
+  background-attachment: fixed;
+}
+#header::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+  width:100%;
+  height:1000px;
+  background:rgba(0,0,0,0.5);
+  z-index:-1;
+}
+.transparent-dark {
+      background: rgba(0, 0, 0, 0.5);
+
+      height:1000px;
+
+    }
+#h1{
+    padding-top:20px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 96px;
+}
+#subtitle{
+    line-height: 0%;
+    font-size: 12px;
+}
+#words{
+  line-height: 100%;
+  padding-top:20px;
+  font-size: 30px;
+}
+.one , .two , .three {
+  border: 1px solid gainsboro;
+  background-color: white;
+  text-align: center;
+}
+.card-body{
+  margin: 5%;
+}
+</style>
+
+{{> layout1.hbs}}

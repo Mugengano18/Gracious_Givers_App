@@ -20,6 +20,20 @@ public class App1 {
 
         volunteer1=new Sql2ovolunteerDao(sql2o);
         donation=new Sql2odonatorDao(sql2o);
+
+
+
+        get("/",(request, response) ->{
+            Map<String, Object> model = new HashMap<>();
+            return new ModelAndView(model, "index.hbs");
+        }, new HandlebarsTemplateEngine() );
+
+        get("/area",(request, response) ->{
+            Map<String, Object> model = new HashMap<>();
+            return new ModelAndView(model, "area.hbs");
+        }, new HandlebarsTemplateEngine() );
+
+
         //getting the volunter form
         get("/volunteer/new",((request, response) -> {
             Map<String,Object> model=new HashMap<>();
@@ -62,7 +76,7 @@ public class App1 {
 
         get("/About",((request, response) -> {
             Map<String,Object> model=new HashMap<>();
-            return new ModelAndView(model, "About.hbs");
+            return new ModelAndView(model, "about.hbs");
         }), new HandlebarsTemplateEngine());
     }
 }
